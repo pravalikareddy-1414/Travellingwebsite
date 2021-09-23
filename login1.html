@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title> CSS Login Screen Tutorial </title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+*:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+body {
+  background: #21242a;
+  font-size: 14px;
+}
+
+form {
+  position: relative;
+  margin: auto;
+  margin-top: 5em;
+  width: 400px;
+  background: #fff;
+  border: 5px solid #ffa369;
+  transition: all 300ms ease-in;
+  box-shadow: 0px 50px 70px -40px rgba(0,0,0,.8);
+  overflow: hidden;
+}
+
+form label.tab_label {
+  float: left;
+  color: #ffa369;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2.6em;
+  width: 50%;
+  transition: all 300ms ease-in;
+  cursor: pointer;
+}
+
+form label.tab_label:hover,
+form input[type="radio"]:checked + label.tab_label {
+  background: #ffa369;
+  color: #fff;
+}
+
+form input[id="login"]:checked ~ figure.reveal_login,
+form input[id="signup"]:checked ~ figure.reveal_signin{
+  background: #ffa369;
+  height: initial;
+  padding: 3em;
+  z-index: 10000000;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+figure {
+  float: left;
+  width: 100%;
+  height: 0px;
+  transition: all 500ms cubic-bezier(0, 0, 0.4, 1.61);
+}
+
+figure p {
+  color: #fff;
+}
+
+figure input {
+  float: left;
+  margin-top: 1em;
+}
+
+figure input:focus {
+  outline: 0;
+}
+
+figure input::-webkit-input-placeholder {
+  color: rgba(255,163,105,.7);
+}
+
+figure input[type="text"],
+figure input[type="password"] {
+  width: 100%;
+  padding: .5em;
+  border: 3px solid rgba(255,163,105,.7);
+  color: #ffa369;
+}
+
+figure input[type="submit"] {
+  float: right;
+  background: #ffa369;
+  border: 3px solid #fff;
+  width: 50%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  transition: all 300ms ease-in;
+}
+
+figure input[type="submit"]:hover {
+  background: #fff;
+  color: #ffa369;
+}
+
+figure input[type="checkbox"] {
+  margin-top: 1.2em;
+}
+
+figure label.content_label {
+  float: left;
+  font-size: .7em;
+  line-height: 2em;
+  margin-top: 1.2em;
+  margin-left: .4em;
+  color: #fff;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 1.4em;
+  color: rgba(255,163,105,.7);
+}
+</style>
+</head>
+<body>
+ <form>
+  <input id="login" type="radio" name="tab" />
+  <label class="tab_label" for="login">log in</label>
+  <input id="signup" type="radio" name="tab" />
+  <label class="tab_label" for="signup">sign up</label>
+  <figure class="reveal_login">
+    <p>Please log in with your account.</p>
+    <input type="text" placeholder="user" />
+    <input type="password" placeholder="password" />
+    <input id="logged_in" type="checkbox" />
+    <label class="content_label" for="logged_in">Keep me logged in</label>
+    <input type="submit" value="Log in" onclick="demoA()/>
+  </figure>
+  <figure class="reveal_signin">
+    <p>You can register a new account.</p>
+    <input type="text" placeholder="user" />
+    <input type="password" placeholder="password" />
+    <input type="submit" value="Sign up" />
+  </figure>
+</form>
+  </section>
+<script>
+// (A) ALERT
+function demoA () { 
+ alert("you'r login is scuceesfully completed"); 
+}
+</script>
+ 
+</body>
+</html>

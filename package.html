@@ -1,0 +1,190 @@
+<!Doctype html>
+<head>
+<title>package</title>
+<style>
+  .packages .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:2rem;
+}
+
+.packages .box-container .box{
+  flex:1 1 30rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+
+.packages .box-container .box img{
+  height: 25rem;
+  width:100%;
+  object-fit: cover;
+}
+
+.packages .box-container .box .content{
+  padding:2rem;
+}
+
+.packages .box-container .box .content h3{
+  font-size:2rem;
+  color:#333;
+}
+
+.packages .box-container .box .content h3 i{
+  color:var(--orange);
+}
+
+.packages .box-container .box .content p{
+  font-size:1.7rem;
+  color:#666;
+  padding:1rem 0;
+}
+
+.packages .box-container .box .content .stars i{
+  font-size:1.7rem;
+  color:var(--orange);
+}
+
+.packages .box-container .box .content .price{
+  font-size: 2rem;
+  color:#333;
+  padding-top: 1rem;
+}
+
+.packages .box-container .box .content .price span{
+  color:#666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+</style>
+<head>
+<body>
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img1/mumbai.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
+                <p>5 days+room+food+cab</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 15,000 <span>20,000</span> </div>
+                <input type="submit" class="btn" value="book now" onclick="demoA()"> 
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img1/delhi.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> delhi </h3>
+                <p>4nights+food+hotel+car</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 14,000 <span>19,000</span> </div>
+                <input type="submit" class="btn" value="book now" onclick="demoA()"> 
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img1/goa.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> goa </h3>
+                <p>6days+room+food+car</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 22,000<span>27,000</span> </div>
+                <input type="submit" class="btn" value="book now" onclick="demoA()"> 
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img1/maldives.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> maldives </h3>
+                <p>6days+hotel+car+food+beachnytpass</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 30,000 <span>35,000</span> </div>
+                <input type="submit" class="btn" value="book now" onclick="demoA()"> 
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img1/malasia.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> malasia </h3>
+                <p>6nights+hotel+food+car+tourguide</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 90,000 <span>1,00,000</span> </div>
+                <input type="submit" class="btn" value="book now" onclick="demoA()"> 
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img1/paris.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> paris </h3>
+                <p>hotel+tourguide+car+5 nights</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 1,50,000<span>1,70,000</span> </div>
+                <input type="submit" class="btn" value="book now" onclick="demoA()"> 
+            </div>
+        </div>
+
+    </div>
+
+</section>
+</body>
+<script>
+// (A) ALERT
+function demoA () { 
+ alert("your trip is sucessfully booked"); 
+}
+</script>
+</html>
